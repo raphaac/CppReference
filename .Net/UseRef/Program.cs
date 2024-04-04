@@ -9,7 +9,7 @@ namespace UseRef
 
         static void Main(string[] args)
         {
-            int resultado = soma(5, 3);
+            int resultado = soma(5, 3); 
             Console.WriteLine($"O resultado é: {resultado}");
             Console.ReadLine();
         }
