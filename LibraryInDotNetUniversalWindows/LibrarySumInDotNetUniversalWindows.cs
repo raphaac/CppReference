@@ -1,8 +1,8 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace UseRef
+namespace LibraryInDotNetUniversalWindows
 {
-    internal class Program
+    public static class LibrarySumInDotNetUniversalWindows
     {
         private static class RaphaelMethods
         {
@@ -15,15 +15,10 @@ namespace UseRef
             public static extern int multiplicacao(int a, int b);
         }
 
-        static void Main(string[] args)
+        public static int Sum(int a, int b)
         {
-            int resultado = LibraryInDotNet.LibrarySumInDotNet.Sum(5, 3); 
-            Console.WriteLine($"O resultado da soma é: {resultado}");
-
-            //resultado = RaphaelMethods.multiplicacao(5, 3);
-            //Console.WriteLine($"O resultado da multiplicação é: {resultado}");
-
-            Console.ReadLine();
+            return RaphaelMethods.soma(a, b);
         }
-    }        
+
+    }
 }
