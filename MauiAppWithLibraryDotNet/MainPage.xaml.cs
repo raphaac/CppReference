@@ -26,7 +26,7 @@ namespace MauiAppWithLibraryDotNet
             #if WINDOWS
                 CounterBtn.Text = $"Clicked {RaphaelMethods.soma(5, 3)} time";
             #elif ANDROID
-                CounterBtn.Text = $"Clicked 0 time";
+                CounterBtn.Text = $"Clicked {RaphaelMethods.soma(5, 3)} time";
             #else
                 CounterBtn.Text = $"Clicked 0 time";
             #endif
