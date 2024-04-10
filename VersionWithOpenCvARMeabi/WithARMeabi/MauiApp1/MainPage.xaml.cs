@@ -1,4 +1,6 @@
-﻿namespace MauiApp1
+﻿using AndroidLib1;
+
+namespace MauiApp1
 {
     public partial class MainPage : ContentPage
     {
@@ -11,7 +13,9 @@
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            count++;
+            #if ANDROID
+                        count += Class1.MethodOpenCv();
+            #endif
 
             if (count == 1)
                 CounterBtn.Text = $"Clicked {count} time";
