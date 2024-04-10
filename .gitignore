@@ -482,3 +482,5 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+/Bkp/VersionWithOpenCvARMeabi/WithARMeabi
+/Lixo/MauiApp2
