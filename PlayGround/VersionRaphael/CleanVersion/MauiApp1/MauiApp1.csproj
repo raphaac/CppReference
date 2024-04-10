@@ -56,6 +56,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="lib\x86_64\libopencv_java3.so" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <AndroidNativeLibrary Include="lib\x86_64\libopencv_java3.so">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </AndroidNativeLibrary>
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />

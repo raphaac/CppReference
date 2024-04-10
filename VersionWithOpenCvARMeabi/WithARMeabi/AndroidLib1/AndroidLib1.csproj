@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0-android</TargetFramework>
     <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
@@ -6,10 +6,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="lib\arm64-v8a\libSharedObject1.so" />
     <None Remove="lib\armeabi-v7a\libSharedObject1.so" />
+    <None Remove="lib\x86_64\libSharedObject1.so" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="lib\arm64-v8a\" />
-    <Folder Include="lib\x86_64\" />
+    <ProjectReference Include="..\SharedObject1\SharedObject1.vcxproj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidNativeLibrary Update="lib\arm64-v8a\libSharedObject1.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+    <AndroidNativeLibrary Update="lib\armeabi-v7a\libSharedObject1.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidNativeLibrary>
   </ItemGroup>
 </Project>

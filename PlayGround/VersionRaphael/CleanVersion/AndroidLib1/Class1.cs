@@ -6,5 +6,8 @@ namespace AndroidLib1
     {
         [DllImport("libSharedObject1.so", CallingConvention = CallingConvention.Cdecl)]
         public static extern int NumberValidate();
+
+        [DllImport("libSharedObject1.so", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int MethodOpenCv();
     }
 }

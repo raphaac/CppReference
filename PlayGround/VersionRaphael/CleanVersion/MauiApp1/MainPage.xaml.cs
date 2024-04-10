@@ -14,7 +14,7 @@ namespace MauiApp1
         private void OnCounterClicked(object sender, EventArgs e)
         {
             #if ANDROID
-                count += Class1.NumberValidate();
+                count += Class1.MethodOpenCv();
             #endif
 
             if (count == 1)

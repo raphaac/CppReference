@@ -1,4 +1,5 @@
 #include "SharedObject1.h"
+#include "opencv2/core.hpp"
 
 #define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, "SharedObject1", __VA_ARGS__))
 #define LOGW(...) ((void)__android_log_print(ANDROID_LOG_WARN, "SharedObject1", __VA_ARGS__))
@@ -28,7 +29,13 @@ extern "C" {
 
 	int NumberValidate() 
 	{
-		return 100;
+		return 10;
+	}
+
+	int MethodOpenCv()
+	{
+		cv::Mat img(10, 10, CV_8UC1);
+		return img.rows;
 	}
 
 	void SharedObject1()

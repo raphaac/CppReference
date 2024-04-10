@@ -8,4 +8,9 @@
   <ItemGroup>
     <None Remove="lib\x86_64\libSharedObject1.so" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidNativeLibrary Update="lib\x86_64\libSharedObject1.so">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </AndroidNativeLibrary>
+  </ItemGroup>
 </Project>
