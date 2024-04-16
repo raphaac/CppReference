@@ -108,11 +108,11 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>D:\RAC\Estudos\OpenCv\opencvAndroid\OpenCV-android-sdk\sdk\native\jni\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\RAC\Estudos\OpenCv\opencv-3.4.16-android\OpenCV-android-sdk\sdk\native\jni\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>D:\RAC\Estudos\OpenCv\opencvAndroid\OpenCV-android-sdk\sdk\native\libs\x86_64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>D:\RAC\Estudos\OpenCv\opencvAndroid\OpenCV-android-sdk\sdk\native\libs\x86_64\libopencv_java3.so;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\RAC\Estudos\OpenCv\opencv-3.4.16-android\OpenCV-android-sdk\sdk\native\libs\x86_64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>D:\RAC\Estudos\OpenCv\opencv-3.4.16-android\OpenCV-android-sdk\sdk\native\libs\x86_64\libopencv_java3.so;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
